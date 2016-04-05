@@ -33,7 +33,6 @@ MonoBehaviour:
     textureVariables: []
   events:
   - ButtonPressed
-  - Cancel
   - closeDoor
   - default
   - mouseOver
