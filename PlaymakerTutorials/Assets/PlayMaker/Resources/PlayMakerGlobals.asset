@@ -12,26 +12,81 @@ MonoBehaviour:
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
-    floatVariables:
+    floatVariables: []
+    intVariables:
     - useVariable: 1
-      name: test
+      name: CurrentPlayerHealth
       tooltip: 
       showInInspector: 0
       networkSync: 0
       value: 0
-    intVariables: []
+    - useVariable: 1
+      name: KeyCardsHeld
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: QuestStage
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     boolVariables: []
-    stringVariables: []
+    stringVariables:
+    - useVariable: 1
+      name: CurrentPlayerHealthString
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
     vector2Variables: []
     vector3Variables: []
-    colorVariables: []
+    colorVariables:
+    - useVariable: 1
+      name: Color_1
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 1, g: 0, b: 0, a: 1}
+    - useVariable: 1
+      name: Color_2
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0.07586217, g: 1, b: 0, a: 1}
+    - useVariable: 1
+      name: Color_3
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0, g: 0.0068967342, b: 1, a: 1}
+    - useVariable: 1
+      name: Color_4
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 1, g: 0.64137936, b: 0, a: 1}
     rectVariables: []
     quaternionVariables: []
-    gameObjectVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: GameManager
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: HealthManager
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
     objectVariables: []
     materialVariables: []
     textureVariables: []
   events:
+<<<<<<< HEAD
   - ButtonPressed
   - closeDoor
   - default
@@ -45,3 +100,20 @@ MonoBehaviour:
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
+=======
+  - add_health
+  - remove_health
+  - open_lid
+  - Platform_add
+  - Platform_remove
+  - card_collected
+  - open doors
+  - remove counter
+  - Update Counter
+  - Advance Quest Stage
+  - terminal_unlocked
+  - advance_quest
+  - clicked_on
+  - Pop Up
+  - set_number
+>>>>>>> 4c84e15c06cd248f60e832c630a0e64f1160cf21
