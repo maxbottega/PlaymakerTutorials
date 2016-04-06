@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 42938266, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: PlayMakerGlobals
+  m_EditorClassIdentifier: 
+  variables:
+    floatVariables: []
+    intVariables:
+    - useVariable: 1
+      name: KeyCardHeld
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: QuestStage
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: current_player_health_i
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables: []
+    stringVariables:
+    - useVariable: 1
+      name: current_player_health_s
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    vector2Variables: []
+    vector3Variables: []
+    colorVariables:
+    - useVariable: 1
+      name: Color1
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0, g: 0, b: 0, a: 1}
+    - useVariable: 1
+      name: Color2
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0, g: 0, b: 0, a: 1}
+    - useVariable: 1
+      name: Color3
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0, g: 0, b: 0, a: 1}
+    - useVariable: 1
+      name: Color4
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0, g: 0, b: 0, a: 1}
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: GameManager
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: Health_Manager
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    objectVariables: []
+    materialVariables: []
+    textureVariables: []
+  events:
+  - AddHealth
+  - RemoveHealth
+  - PopUp
+  - open_lid
+  - CheckForWin
+  - PlatformAdd
+  - PlatformSubtract
+  - card_collected
+  - Advance Quest Stage
+  - advance_quest
+  - B1 Clicked On
+  - open_doors
+  - RemoveCounter
+  - UpdateCounter
+  - terminal_unlocked
+  - B2 Clicked On
