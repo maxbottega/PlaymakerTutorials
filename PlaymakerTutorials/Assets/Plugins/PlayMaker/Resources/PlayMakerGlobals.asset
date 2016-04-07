@@ -8,14 +8,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 42938266, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Script: {fileID: 42938266, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
     floatVariables: []
     intVariables:
     - useVariable: 1
-      name: KeyCardsHeld
+      name: KeyCardHeld
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -25,9 +25,21 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 0
+    - useVariable: 1
+      name: current_player_health_i
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     boolVariables: []
-    stringVariables: []
+    stringVariables:
+    - useVariable: 1
+      name: current_player_health_s
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
     vector2Variables: []
     vector3Variables: []
     colorVariables:
@@ -36,25 +48,25 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 0.9338235, g: 0, b: 0, a: 1}
+      value: {r: 0, g: 0, b: 0, a: 1}
     - useVariable: 1
       name: Color2
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 0.15882337, g: 0, b: 0.7941176, a: 1}
+      value: {r: 0, g: 0, b: 0, a: 1}
     - useVariable: 1
       name: Color3
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 0.028143983, g: 0.8161765, b: 0, a: 1}
+      value: {r: 0, g: 0, b: 0, a: 1}
     - useVariable: 1
       name: Color4
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 0.9126775, g: 1, b: 0.09558821, a: 1}
+      value: {r: 0, g: 0, b: 0, a: 1}
     rectVariables: []
     quaternionVariables: []
     gameObjectVariables:
@@ -64,55 +76,29 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: {fileID: 0}
+    - useVariable: 1
+      name: Health_Manager
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
     objectVariables: []
     materialVariables: []
     textureVariables: []
   events:
-<<<<<<< HEAD
-  - ButtonPressed
-  - closeDoor
-  - default
-  - mouseOver
-  - openDoor
-  - touch
-  - reset
-  - pressed
-  - paused
-  - MoveTo
---- !u!1002 &11400001
-EditorExtensionImpl:
-  serializedVersion: 6
-=======
-  - add_health
-  - remove_health
+  - AddHealth
+  - RemoveHealth
+  - PopUp
   - open_lid
-  - Platform_add
-  - Platform_remove
+  - CheckForWin
+  - PlatformAdd
+  - PlatformSubtract
   - card_collected
-  - open doors
-  - remove counter
-  - Update Counter
   - Advance Quest Stage
-  - terminal_unlocked
   - advance_quest
-  - clicked_on
-  - Pop Up
-  - set_number
-<<<<<<< HEAD
-  - add_Health
-  - Platform_Add
-  - Platform_Substract
-  - OpenLid
-  - Set to Stage 2
-  - Set to Stage 3
-  - B2 clicked on
-  - Open Doors
+  - B1 Clicked On
+  - open_doors
   - RemoveCounter
-  - terminal_Unlocked
   - UpdateCounter
-  - Card_collected
-  - Entered
-  - B1 clicked on
-=======
->>>>>>> 4c84e15c06cd248f60e832c630a0e64f1160cf21
->>>>>>> 9a359602bf00caf3ed09cca551a651111291a86c
+  - terminal_unlocked
+  - B2 Clicked On
