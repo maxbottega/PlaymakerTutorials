@@ -15,12 +15,6 @@ MonoBehaviour:
     floatVariables: []
     intVariables:
     - useVariable: 1
-      name: CurrentPlayerHealth
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
-    - useVariable: 1
       name: KeyCardsHeld
       tooltip: 
       showInInspector: 0
@@ -31,53 +25,41 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     boolVariables: []
-    stringVariables:
-    - useVariable: 1
-      name: CurrentPlayerHealthString
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 
+    stringVariables: []
     vector2Variables: []
     vector3Variables: []
     colorVariables:
     - useVariable: 1
-      name: Color_1
+      name: Color1
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 1, g: 0, b: 0, a: 1}
+      value: {r: 0.9338235, g: 0, b: 0, a: 1}
     - useVariable: 1
-      name: Color_2
+      name: Color2
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 0.07586217, g: 1, b: 0, a: 1}
+      value: {r: 0.15882337, g: 0, b: 0.7941176, a: 1}
     - useVariable: 1
-      name: Color_3
+      name: Color3
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 0, g: 0.0068967342, b: 1, a: 1}
+      value: {r: 0.028143983, g: 0.8161765, b: 0, a: 1}
     - useVariable: 1
-      name: Color_4
+      name: Color4
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {r: 1, g: 0.64137936, b: 0, a: 1}
+      value: {r: 0.9126775, g: 1, b: 0.09558821, a: 1}
     rectVariables: []
     quaternionVariables: []
     gameObjectVariables:
     - useVariable: 1
       name: GameManager
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: {fileID: 0}
-    - useVariable: 1
-      name: HealthManager
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -101,3 +83,17 @@ MonoBehaviour:
   - clicked_on
   - Pop Up
   - set_number
+  - add_Health
+  - Platform_Add
+  - Platform_Substract
+  - OpenLid
+  - Set to Stage 2
+  - Set to Stage 3
+  - B2 clicked on
+  - Open Doors
+  - RemoveCounter
+  - terminal_Unlocked
+  - UpdateCounter
+  - Card_collected
+  - Entered
+  - B1 clicked on
